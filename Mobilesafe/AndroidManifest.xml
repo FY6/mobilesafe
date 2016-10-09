@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wfy.mobilesafe"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 杀死进程需要加 android.permission.KILL_BACKGROUND_PROCESSES 权限 -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+
+    <!--有米配置-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 如果使用积分墙广告,还需要配置下面权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- 闪屏页面 -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 主页面 -->
+        <activity android:name=".activity.HomeActivity">
+            <intent-filter>
+                <action android:name="com.wfy.mobilesafe.activity.HomeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 设置中心 -->
+        <activity android:name=".activity.SettingActivity" />
+        <!-- 手机防盗 -->
+        <activity android:name=".activity.LostFindActivity" />
+        <!-- 向导页面 -->
+        <activity android:name=".activity.Setup1Activity" />
+        <activity android:name=".activity.Setup2Activity" />
+        <activity android:name=".activity.Setup3Activity" />
+        <activity android:name=".activity.Setup4Activity" />
+        <!-- 选择联系人页面 -->
+        <activity android:name=".activity.SelectContactActivity" />
+        <!-- 高级工具 -->
+        <activity android:name=".activity.AToolsActivity" />
+        <!-- 电话归属地 -->
+        <activity android:name=".activity.AddressActivity" />
+        <!-- 归属地拖拽 -->
+        <activity
+            android:name=".activity.DragViewActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <!-- 开机广播接受者 -->
+        <receiver android:name=".receiver.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <!-- 短信广播接受者 -->
+        <receiver android:name=".receiver.SmsReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <!-- 超级设备管理器 -->
+        <receiver
+            android:name=".receiver.DeviceAdmin"
+            android:description="@string/sample_device_admin_description"
+            android:label="@string/sample_device_admin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+        <receiver android:name="com.wfy.mobilesafe.receiver.OutCallReceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+        -->
+        <!-- 位置服务 -->
+        <service android:name=".service.LocationService" />
+        <!-- 归属地服务 -->
+        <service android:name=".service.AddressService" />
+        <!-- 通讯卫士 -->
+        <activity android:name=".activity.CallSafeActivity" />
+        <!-- 拦截黑名单服务 -->
+        <service
+            android:name=".service.CallSafeService"
+            android:enabled="true"
+            android:exported="true" />
+        <!-- 软件管理 -->
+        <activity android:name=".activity.AppManagerActivity" />
+        <activity android:name=".activity.TaskManagerActivity" />
+        <activity android:name=".activity.CommonNumberActivity" />
+        <activity android:name=".activity.TaskManagerSettingActivity" />
+
+        <!-- 病毒查杀 -->
+        <activity android:name=".activity.AntivirusActivity" />
+
+        <service
+            android:name=".service.AutoKillService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.TimerClearService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <!-- 定义 app widget -->
+        <receiver android:name=".receiver.MyAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_info" />
+        </receiver>
+        <!-- 定时清理 -->
+        <service
+            android:name=".service.AutoCleaService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <!-- 杀死锁进程的广播接受者 -->
+        <receiver android:name=".receiver.KillAllProcessReciever">
+            <intent-filter>
+                <action android:name="com.wfy.mobilesafe" />
+            </intent-filter>
+        </receiver>
+        <!-- 程序锁 -->
+        <activity android:name=".activity.AppLocksActivity" />
+        <!-- 看门狗 -->
+        <service
+            android:name=".service.WhatchDogService"
+            android:enabled="true"
+            android:exported="true" />
+        <!-- 缓存清理 -->
+        <activity
+            android:name=".activity.PassWordActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".activity.CleanCacheActivity" />
+        <activity android:name=".activity.TrafficActivity"></activity>
+
+        <!--有米配置-->
+        <activity
+            android:name="net.youmi.android.AdBrowser"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+
+        <service
+            android:name="net.youmi.android.AdService"
+            android:exported="false"></service>
+        <service
+            android:name="net.youmi.android.ExpService"
+            android:exported="false"></service>
+
+        <receiver android:name="net.youmi.android.AdReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/styleTitle"
+            android:text="进程管理设置" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:onClick="save"
+            android:text="保存" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/cb_show_sysProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前状态: 显示系统进程" />
+
+    <CheckBox
+        android:id="@+id/cb_lockScreen_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前状态: 锁屏清理已关闭" />
+
+    <CheckBox
+        android:id="@+id/cb_time_killProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="定时清理进程" />
+
+    <TextView
+        android:id="@+id/tv_killTime_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:drawableRight="@drawable/jiantou1_pressed"
+        android:enabled="false"
+        android:paddingBottom="10dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="定时清理时间间隔设置"
+        android:textColor="#000"
+        android:textSize="18sp" />
+</LinearLayout>

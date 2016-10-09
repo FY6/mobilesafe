@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--水平进度条层列表-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--背景资源-->
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/security_progress_bg">
+        <shape>
+            <corners android:radius="5dip" />
+            <gradient
+                android:angle="270"
+                android:centerColor="#ff5a5d5a"
+                android:centerY="0.75"
+                android:endColor="#ff747674"
+                android:startColor="#ff9d9e9d" />
+        </shape>
+    </item>
+    <!--有进度的时候 进度条的图片-->
+    <item
+        android:id="@android:id/secondaryProgress"
+        android:drawable="@drawable/security_progress">
+        <clip>
+            <shape>
+                <!--角度-->
+                <corners android:radius="5dip" />
+                <!--渐变-->
+                <gradient
+                    android:angle="270"
+                    android:centerColor="#80ffb600"
+                    android:centerY="0.75"
+                    android:endColor="#a0ffcb00"
+                    android:startColor="#80ffd300" />
+            </shape>
+        </clip>
+    </item>
+    <!--有进度的时候 进度条的图片-->
+    <item
+        android:id="@android:id/progress"
+        android:drawable="@drawable/security_progress">
+        <clip>
+            <shape>
+                <corners android:radius="5dip" />
+                <gradient
+                    android:angle="270"
+                    android:centerColor="#ffffb600"
+                    android:centerY="0.75"
+                    android:endColor="#ffffcb00"
+                    android:startColor="#ffffd300" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>
+

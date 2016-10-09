@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\AndroidStudioprojects\Mobilesafe\libs\YoumiSdk_v6.1.0_2016-02-26.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="fd7480952f8d78a6dabb781555e88e507ba32d79">
+        <dex dex="E:\AndroidStudioprojects\Mobilesafe\build\intermediates\pre-dexed\debug\YoumiSdk_v6.1.0_2016-02-26_011d2921679205f756d90e9131865212fd02c08b.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioprojects\Mobilesafe\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="E:\AndroidStudioprojects\Mobilesafe\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_26940240e49b33bf9a9b1ad23bac1eb2b898aaab.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioprojects\Mobilesafe\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="E:\AndroidStudioprojects\Mobilesafe\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_4a023af805f3b378ee5be44cebc03c9e4dd7c525.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioprojects\Mobilesafe\libs\gson-2.2.4.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="E:\AndroidStudioprojects\Mobilesafe\build\intermediates\pre-dexed\debug\gson-2.2.4_9f73970bd89aabdbeb4e28fb03bb8334048f4d1d.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioprojects\Mobilesafe\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="422831b00af0ff2af6f2b0ccb692e5fd4f5c49a2">
+        <dex dex="E:\AndroidStudioprojects\Mobilesafe\build\intermediates\pre-dexed\debug\instant-run_1023c13f696cff2bcaaddfafe3ddd810cc1bd2e4.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioprojects\Mobilesafe\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d36b36265620fb5e742dabc3de4d06781ea3d425">
+        <dex dex="E:\AndroidStudioprojects\Mobilesafe\build\intermediates\pre-dexed\debug\instant-run-bootstrap_0ef92787754ad030f9fe06ddf17513b6b8321afd.jar" />
+    </item>
+    <item
+        jar="E:\Users\wfy\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="E:\AndroidStudioprojects\Mobilesafe\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_32d5508b70bde9829720ca308016f838555efa8b.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioprojects\Mobilesafe\libs\xUtils-2.6.14.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="E:\AndroidStudioprojects\Mobilesafe\build\intermediates\pre-dexed\debug\xUtils-2.6.14_d765976e31b299c8af3da35ae61bd7971e48c079.jar" />
+    </item>
+
+</items>

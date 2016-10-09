@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        style="@style/styleTitle"
+        android:text="看门狗" />
+
+    <TextView
+        android:id="@+id/tv_dog_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机安全卫士"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_dog_appicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher2" />
+
+    <EditText
+        android:id="@+id/et_dog_pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edtitext_back"
+        android:hint="请输入密码"
+        android:inputType="numberPassword" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定" />
+</LinearLayout>

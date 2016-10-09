@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "E:\\AndroidStudioprojects\\Mobilesafe\\build\\intermediates\\res\\merged\\debug\\drawable\\checkbox_selector.xml",
+        "source": "E:\\AndroidStudioprojects\\Mobilesafe\\res\\drawable\\checkbox_selector.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioprojects\\Mobilesafe\\build\\intermediates\\res\\merged\\debug\\drawable\\function_greenbutton_normal.9.png",
+        "source": "E:\\AndroidStudioprojects\\Mobilesafe\\res\\drawable\\function_greenbutton_normal.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioprojects\\Mobilesafe\\build\\intermediates\\res\\merged\\debug\\drawable\\function_greenbutton_selector.xml",
+        "source": "E:\\AndroidStudioprojects\\Mobilesafe\\res\\drawable\\function_greenbutton_selector.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioprojects\\Mobilesafe\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_gradient.xml",
+        "source": "E:\\AndroidStudioprojects\\Mobilesafe\\res\\drawable\\shape_gradient.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioprojects\\Mobilesafe\\build\\intermediates\\res\\merged\\debug\\drawable\\checkbox_selector_antivirus.xml",
+        "source": "E:\\AndroidStudioprojects\\Mobilesafe\\res\\drawable\\checkbox_selector_antivirus.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioprojects\\Mobilesafe\\build\\intermediates\\res\\merged\\debug\\drawable\\button.xml",
+        "source": "E:\\AndroidStudioprojects\\Mobilesafe\\res\\drawable\\button.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioprojects\\Mobilesafe\\build\\intermediates\\res\\merged\\debug\\drawable\\myprogress_drawable.xml",
+        "source": "E:\\AndroidStudioprojects\\Mobilesafe\\res\\drawable\\myprogress_drawable.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioprojects\\Mobilesafe\\build\\intermediates\\res\\merged\\debug\\drawable\\gradient_box.xml",
+        "source": "E:\\AndroidStudioprojects\\Mobilesafe\\res\\drawable\\gradient_box.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioprojects\\Mobilesafe\\build\\intermediates\\res\\merged\\debug\\drawable\\myprogress_horizontal.xml",
+        "source": "E:\\AndroidStudioprojects\\Mobilesafe\\res\\drawable\\myprogress_horizontal.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioprojects\\Mobilesafe\\build\\intermediates\\res\\merged\\debug\\drawable\\function_greenbutton_pressed.9.png",
+        "source": "E:\\AndroidStudioprojects\\Mobilesafe\\res\\drawable\\function_greenbutton_pressed.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioprojects\\Mobilesafe\\build\\intermediates\\res\\merged\\debug\\drawable\\call_safe_click.xml",
+        "source": "E:\\AndroidStudioprojects\\Mobilesafe\\res\\drawable\\call_safe_click.xml"
+    }
+]

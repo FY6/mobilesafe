@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 按钮的选择器 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/antivirus_check_status" android:state_checked="true" /> <!-- 当被选中，显示的图片 -->
+    <item android:drawable="@drawable/antivirus_check_status_yes" /> <!-- 默认时的图片 -->
+</selector>

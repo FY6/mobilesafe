@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 自定义SettingItemView的属性
+如何使用？
+直接在需要使用该view的布局文件中，声明命名空间：如：xmlns:wfy="http://schemas.android.com/apk/res/com.wfy.mobilesafe"
+例如：wfy:title
+在SettingItemView类中的构造方法中通过Attribute拿到布局文件中的name和value
+ -->
+<resources>
+      <declare-styleable name="SettingItemView">
+          <attr name="title" format="string"/>
+          <attr name="desc_on" format="string"/>
+          <attr name="desc_off" format="string"/>
+      </declare-styleable>
+</resources>

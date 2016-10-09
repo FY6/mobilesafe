@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wfy="http://schemas.android.com/apk/res/com.wfy.mobilesafe">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/styleTitle"
+        android:text="設置中心" />
+
+    <com.wfy.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        wfy:desc_off="自动更新已关闭"
+        wfy:desc_on="自动更新已开启"
+        wfy:title="自动更新设置" />
+
+    <com.wfy.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        wfy:desc_off="归属地显示已关闭"
+        wfy:desc_on="归属地显示已开启"
+        wfy:title="电话归属地显示设置" />
+
+    <com.wfy.mobilesafe.view.SettingClickView
+        android:id="@+id/siv_address_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.wfy.mobilesafe.view.SettingClickView
+        android:id="@+id/siv_address_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.wfy.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_black_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        wfy:desc_off="黑名单功能已关闭"
+        wfy:desc_on="黑名单功能已开启"
+        wfy:title="黑名单功能设置" />
+    <com.wfy.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_whatch_dog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        wfy:desc_off="看门狗已关闭"
+        wfy:desc_on="看门狗已开启"
+        wfy:title="看门狗设置" />
+</LinearLayout>
+</ScrollView>
